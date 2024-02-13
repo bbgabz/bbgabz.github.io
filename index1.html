@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel = "stylesheet" href="style1.css">
+        <link rel="shortcut icon" type="image/png" href="./assets/logo/favicon.png">
+        <script
+            type = "module"
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+        </script>
+        <script
+            nomodule
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+            <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("78CYhs3ZwtgHNsY6_");
+        })();
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        
+    </head>
+<body>
+    
+    <section class="hero">
+        <header class="header">
+            <img src="./assets/logo/logo.png" alt="" class="logo">
+            <a href="./assets/file/Resume.pdf" class="download">DOWNLOAD CV</a>
+            <ul class="main-nav-list">
+                <li><a href="#" class="main-nav-link">Home</a></li>
+                <li><a href="#" class="main-nav-link">Work</a></li>
+                <li><a href="#" class="main-nav-link">Contact</a></li>
+            </ul>
+        </header>
+       
+        <div class="hero-description">
+            <h1 class="hero-title">Hi I'm <span class="mard">Mardie</span>!</h1>
+            <p class="hero-subheading">I am a web <br> <span class="mardprof"></span></p>
+        </div>
+        <div class="profpic">
+            <img src="./assets/profile/3.jpg" class="prof3">
+            <div class="box">
+                <table>
+                    <tr>
+                      
+                      <td> <img src="./assets/profile/a.png"></td>
+                      <td> <img src="./assets/profile/b.png"></td>
+                    </tr>
+                    <tr>
+                    
+                      <td> <img src="./assets/profile/c.png"></td>
+                      <td> <img src="./assets/profile/d.png"></td>
+                    </tr>
+                    <tr>
+                       
+                     <td> <img src="./assets/profile/e.png"></td>
+                     <td> <img src="./assets/profile/f.png"></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="hero-model">
+            <model-viewer src="./assets/models/desk.glb" 
+            camera-controls
+            disable-pan
+            disable-zoom
+            interaction-prompt ="none"
+            min-camera-orbit="auto 55deg auto"
+            max-camera-orbit="auto 92deg auto"
+            field-of-view="35.3deg"
+            ></model-viewer>    
+    </section>
+
+    <!---About Me-->
+    <section class="about-me">
+        <canvas id="c"></canvas>
+            <div class="about-me-description">
+            <p class="introduction">INTRODUCTION !</p>
+            <h1 class="about-me-title">Hello World !</h1>
+            <p class="about-me-subheading">I started my coding journey a few years ago and now I'm doing freelance projects.</p>
+            </div>
+        <script src="starfield.js"></script>
+            
+        <div class="cards">
+            <div class="card animation">
+                <img src="./assets/skills/html.png" alt="" class="htmlImg">
+                <p class="title">HTML</p>
+            </div>
+            <div class="card animation">
+                <img src="./assets/skills/css.png" alt="" class="cssImg">
+                <p class="title">CSS</p>
+            </div>
+            <div class="card animation">
+                <img src="./assets/skills/js.png" alt="" class="jsImg">
+                <p class="title">Java Script</p>
+            </div>
+            <div class="card animation">
+                <img src="./assets/skills/Python.png" alt="" class="pythonImg">
+                <p class="title">Python</p>
+            </div>
+            <div class="card animation">
+                <img src="./assets/skills/powerbi.png" alt="" class="powerbiImg">
+                <p class="title">Power Bi</p>
+            </div>
+            <div class="card animation">
+                <img src="./assets/skills/sql.png" alt="" class="sqlImg">
+                <p class="title">SQL</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        
+    </section>
+    
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="main.js"></script>
+  
+</body>
